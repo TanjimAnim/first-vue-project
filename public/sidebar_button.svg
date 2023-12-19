@@ -1,0 +1,35 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_2627)">
+<rect x="2" y="1.5" width="42" height="42" rx="21" fill="url(#paint0_linear_1_2627)"/>
+<g filter="url(#filter1_b_1_2627)">
+<rect x="10.717" y="10.217" width="24.566" height="24.566" rx="12.283" fill="url(#paint1_radial_1_2627)"/>
+<path d="M23.0991 22.4009V18.934H22.1086V22.4009H18.6416V23.3915H22.1086V26.8585H23.0991V23.3915H26.5661V22.4009H23.0991Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1_2627" x="0.415094" y="0.707547" width="45.1698" height="45.1698" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="0.792453"/>
+<feGaussianBlur stdDeviation="0.792453"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2627"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2627" result="shape"/>
+</filter>
+<filter id="filter1_b_1_2627" x="-5.13202" y="-5.63208" width="56.264" height="56.2642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="7.92453"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1_2627"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_2627" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1_2627" x1="8.6755" y1="-49.5682" x2="64.895" y2="-38.3701" gradientUnits="userSpaceOnUse">
+<stop offset="0.00315941" stop-color="#FF7594"/>
+<stop offset="0.942708" stop-color="#FF7C65"/>
+</linearGradient>
+<radialGradient id="paint1_radial_1_2627" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.4151 11.7168) rotate(41.245) scale(21.8472 46.936)">
+<stop stop-color="white" stop-opacity="0.28"/>
+<stop offset="1" stop-color="white" stop-opacity="0.28"/>
+</radialGradient>
+</defs>
+</svg>
