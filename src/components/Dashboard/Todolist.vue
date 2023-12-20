@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
   <div class="w-10/12 rounded-md shadow-md p-4">
     <div>To-Do List</div>
@@ -71,7 +69,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "TodoList",
 };
