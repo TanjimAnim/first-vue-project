@@ -1,3 +1,37 @@
+<script lang="ts">
+import { defaultNavItems } from "./defaultNavbar.vue";
+import type { NavItem } from "./defaultNavbar.vue";
+import Medidoc from "../Dashboard/Medidoc.vue";
+import { ref } from "vue";
+
+export default {
+  props: {
+    collapsed: Boolean,
+    navItems: {
+      type: Array as () => NavItem[],
+      default: () => defaultNavItems,
+    },
+    shown: Boolean,
+  },
+  name: "Sidebar",
+  components: {
+    Medidoc,
+  },
+  setup(props, { emit }) {
+    const collapsed = ref(props.collapsed);
+
+    const toggleCollapsed = () => {
+      collapsed.value = !collapsed.value;
+      emit("update:collapsed", collapsed.value);
+    };
+    return {
+      collapsed,
+      toggleCollapsed,
+    };
+  },
+};
+</script>
+
 <template>
   <div
     :class="{
@@ -75,30 +109,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import { defaultNavItems } from "./defaultNavbar.vue";
-import type { NavItem } from "./defaultNavbar.vue";
-import Medidoc from "../Dashboard/Medidoc.vue";
-
-export default {
-  props: {
-    collapsed: Boolean,
-    navItems: {
-      type: Array as () => NavItem[],
-      default: () => defaultNavItems,
-    },
-    shown: Boolean,
-  },
-  name: "Sidebar",
-  components: {
-    Medidoc,
-  },
-  computed: {},
-  methods: {
-    toggleCollapsed() {
-      this.$emit("update:collapsed", !this.collapsed);
-    },
-  },
-};
-</script>
