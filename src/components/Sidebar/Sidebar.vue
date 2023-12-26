@@ -41,7 +41,7 @@ export default {
       'bg-white text-black fixed md:static md:translate-x-0 z-20': true,
       'transition-all duration-300 ease-in-out': true,
       'w-[300px]': !collapsed,
-      'w-16': collapsed,
+      'w-0 sm:w-16': collapsed,
       '-translate-x-full': !shown,
     }"
   >
@@ -60,7 +60,7 @@ export default {
       >
         <span v-if="!collapsed" class="whitespace-nowrap"><Medidoc /></span>
         <button
-          class="grid place-content-center w-10 h-10 rounded-full opacity-0 md:opacity-100"
+          class="grid place-content-center w-10 h-10 rounded-full opacity-100"
           @click="toggleCollapsed"
         >
           <template v-if="collapsed">

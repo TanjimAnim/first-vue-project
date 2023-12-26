@@ -39,23 +39,31 @@ export default {
 </script>
 <template>
   <div>
-    <ul class="flex items-center gap-4">
+    <ul class="flex items-center gap-4 my-2">
       <li v-for="(item, index) in items" :key="item.id">
         <div
-          class="w-36 rounded-md shadow-md hover:shadow-lg shadow-[#EDEBEB] p-2 cursor-pointer"
+          class="w-48 rounded-md shadow-md hover:shadow-lg shadow-[#EDEBEB] p-2 cursor-pointer transition-all"
         >
           <div class="w-10 h-10">
             <img :src="item.img" class="w-full h-full object-contain" />
           </div>
-          <div>
+          <div class="text-xl font-bold">
             {{ item.title }}
           </div>
-          <div>
+          <div class="text-lg font-medium">
             {{ item.subtitle }}
           </div>
           <div class="flex items-center gap-2">
             <div><img src="/up-arrow.svg" /></div>
-            <div>{{ item.status }}</div>
+            <div
+              :class="
+                item.status === 'Normal'
+                  ? 'text-red-400 font-bold'
+                  : 'text-green-400 font-bold'
+              "
+            >
+              {{ item.status }}
+            </div>
           </div>
         </div>
       </li>

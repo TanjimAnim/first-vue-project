@@ -22,7 +22,7 @@ export default {
     Sidebar,
   },
   setup() {
-    const collapsed = ref(false);
+    const collapsed = ref(true);
     const showSidebar = ref(true);
     const gridClasses = computed(() => ({
       "grid min-h-screen": true,
@@ -65,7 +65,7 @@ export default {
       <!-- Add dashboard components, charts, data, etc., as needed -->
       <MaryJane />
       <CheckupElements />
-      <TodoList />
+      <Todolist />
       <AppointmentList />
       <CovidUpdate />
     </div>
