@@ -12,6 +12,9 @@ export default {
       default: () => defaultNavItems,
     },
     shown: Boolean,
+    toggleCollapsed: {
+      type: Function,
+    },
   },
   name: "Sidebar",
   components: {
@@ -22,7 +25,7 @@ export default {
 
     const toggleCollapsed = () => {
       collapsed.value = !collapsed.value;
-      emit("update:collapsed", collapsed.value);
+      emit("toggleCollapsed");
     };
     return {
       collapsed,

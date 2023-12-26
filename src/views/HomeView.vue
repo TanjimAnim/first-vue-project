@@ -25,7 +25,7 @@ export default {
     const collapsed = ref(false);
     const showSidebar = ref(true);
     const gridClasses = computed(() => ({
-      "grid bg-zinc-100 min-h-screen": true,
+      "grid min-h-screen": true,
       "grid-cols-sidebar": !collapsed.value,
       "grid-cols-sidebar-collapsed": collapsed.value,
       "transition-[grid-template-columns] duration-300 ease-in-out": true,
